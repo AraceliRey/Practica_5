@@ -1,0 +1,156 @@
+﻿/*
+ * Created by SharpDevelop.
+ * User: Choco
+ * Date: 17/04/2014
+ * Time: 07:28 p.m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Practica5
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		int cont =0;
+		public MainForm()
+		{
+			//
+			// The InitializeComponent() call is required for Windows Forms designer support.
+			//
+			InitializeComponent();
+			
+			//
+			// TODO: Add constructor code after the InitializeComponent() call.
+			//
+		}
+		
+	
+		
+		
+		
+		void Preg1Click(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Res1CheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Res2CheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Res3CheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Preg2Click(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Resp1CheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Resp2CheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Resp3CheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Preg3Click(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Preg4Click(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Rsp1DateChanged(object sender, DateRangeEventArgs e)
+		{
+			
+		}
+		
+		void AcepClick(object sender, EventArgs e)
+		{
+			{
+			string cont ="";
+			cont=this.Acep.Text;
+			
+			
+			
+			if(this.Res1.Checked & this.Res3.Checked){
+				cont ="1 de 4 correctas,  fallaste 3";
+				
+			}
+			
+			if(this.Res1.Checked & this.Res3.Checked & this.Resp2.Checked){
+				cont = "2 de 4 correctas,  fallaste 2";
+			}
+		
+			if(this.Res1.Checked & this.Res3.Checked & this.Resp2.Checked & this.comboBox1.Text =="31")
+			{
+				cont= "3 de 4 correcta,  fallaste 1" ;
+			}
+			
+		   
+		    if(this.Res1.Checked & this.Res3.Checked & this.Resp2.Checked & this.comboBox1.Text =="31"
+ 			   & this.Rsp1.SelectionStart.Date.ToShortDateString()=="16/09/1810")
+		    {
+		    	cont= " FELICIDADES  4 de 4 CORRECTAS";
+		    }
+		    System.Windows.Forms.MessageBox.Show( cont);
+			}
+			
+		}
+	
+		void CodClick(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void TextBox2TextChanged(object sender, EventArgs e)
+		{
+			
+		}
+
+	void NomClick(object sender, System.EventArgs e)
+		{
+			
+		}
+		
+		void TextBox1TextChanged(object sender, System.EventArgs e)
+		{
+			
+		}
+		
+		void Re1SelectedIndexChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void CheckedListBox1SelectedIndexChanged(object sender, EventArgs e)
+		{
+			
+		}
+    }
+}
